@@ -1,0 +1,340 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Windows (vers 12 April 2005), see www.w3.org">
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8">
+
+  <title>飞行课程</title>
+  <link href="../../common/style.css" rel="stylesheet" type=
+  "text/css">
+</head>
+
+<body class="stdcolor" >
+
+    <table width="100%" cellpadding="0" cellspacing="10" summary="SummaryTBD">
+      <tr>
+        <td>
+          <a name="top"></a>
+
+          <table width="100%" border="0" cellspacing="0"
+          cellpadding="0" summary="SummaryTBD">
+            <tr>
+              <td class="LessonTitleTableLeft"><span class=
+              "LessonHead1">课程 3：</span> <span class=
+              "LessonHead2">紧急程序</span></td>
+
+              <td class="LessonTitleTableRight">
+                <div class="TopLink">
+                  <a href="BriefingCommercialLessons03.htm" class=
+                  "FlyNowLink">立即飞行此课程</a>
+                </div>
+              </td>
+
+              <td align="right" bgcolor="#C0CFE2" width="14">
+              <img src="../images/curve.jpg" width="14" height="26"
+              alt="" border="0"></td>
+            </tr>
+          </table>
+
+          <p class="deck">——罗德·马查多</p>
+
+          <div class="article-bodycopy">
+            <p>现代飞机发动机最显著的特点之一是其可靠性。事实上，飞行员在整个职业生涯中驾驶小型活塞发动机飞机飞行而从未经历灾难性发动机故障被认为是常态。然而，即使发动机确实失效，也很少意味着飞行员的"剧终"。曾经运行良好的发动机的飞机现在变成了一架效率稍低的滑翔机，前面有一个大而无用的重量。事实上，经过适当训练的飞行员可以成功应对发动机故障。</p>
+
+            <p>在本课程中，您将学习几种在Beechcraft Baron 58中处理发动机故障的技术。当然，Baron是一架多引擎飞机，单个发动机的失效需要一些超出本课程范围的特殊训练。这就是为什么本课程将专门涵盖如何处理双发动机故障。诚然，双发动机故障很少见，但它可能发生，特别是如果您有点倒霉的话。（换句话说，现在不是投资彩票的最佳时机）。燃油污染、燃油供应不足和燃油耗尽只是飞行员发明的一些原因，以确保两个发动机同时停止运行。尽管在Baron中经历了双发动机故障，本课程也将为您提供在Flight Simulator的任何单引擎飞机中处理发动机故障的有用原则。</p><a name="The Big Picture"></a>
+
+            <p class="SubHead">整体概述</p>
+
+            <p>在我们深入讨论发动机故障程序之前，这里是本课程飞行部分将发生的事情的基本描述。</p>
+
+            <p>您将在华盛顿州佩恩机场以南大约5英里处以巡航配置开始本课程，飞行速度为170节。两个发动机会同时停止。用双唇发出"brrrrrrrrrrrrr"的发动机声音不会让发动机会恢复运行。此外，这可能会使挡风玻璃起雾。</p>
+
+            <p>您的第一个行动将是降低飞机机头以建立适当的滑翔速度。然后您将运行发动机故障检查单，尝试重新启动发动机。当然，发动机会不会重新启动，因为这会破坏课程的目的。接下来，您将激活GPS并找到最近的机场。（我已经给了您一个提示，它在哪里。）您将飞到那个机场的中心，从上方盘旋下降，然后在您选择的跑道上着陆。（即使Baron的两个发动机都失效了，我也会在本课程中用单数而不是复数来谈论发动机。这将有助于使本课程也适用于单引擎飞机。）</p>
+
+            <p>这就是整体概述。您准备好了解详细信息了吗？好的，让游戏开始吧，或者用教员的话说，"让发动机停止。"</p><a name=
+            "When an Engine Quits: The Very First Step"></a>
+
+            <p class="SubHead">当发动机停止时：第一步</p><br>
+
+            <table border="0" cellspacing="5" cellpadding="5" summary="SummaryTBD">
+              <tr>
+                <td class="LessonFigureTable"><img src=
+                "images/lesson3figure01.gif" alt="" border="0"><br>
+                <span class="Figure1">图3-1</span></td>
+              </tr>
+            </table>
+
+            <p>很少有事情能像发动机失效后正确的飞行行为那样确定。一旦您的发动机罢工，您应该立即降低机头到俯仰姿态，这将提供最大航程滑翔速度。在Baron中，这个速度是115节（图3-1）。<em>最大航程滑翔速度</em>给您什么？这里有一个提示：谁埋在格兰特的坟墓里？它让您在当前高度滑翔最大的水平距离（我们假设所有这些例子都是<em>无风</em>条件）。</p>
+
+            <table border="0" cellspacing="5" cellpadding="5" summary="SummaryTBD">
+              <tr>
+                <td class="LessonFigureTable"><img src=
+                "images/lesson03_2.gif" alt="" border="0" width=
+                "450" height="261"><br>
+                <span class="Figure1">图3-2</span></td>
+              </tr>
+            </table>
+
+            <p>您可能会惊讶地知道，大多数活塞发动机飞机的滑翔范围大约是10比1（图3-2）。不，这些不是您无法到达着陆场的概率。这个值表明，如果您在地面以上1,000英尺，您可以水平滑翔10,000英尺。考虑到一些专门制造的滑翔机的滑翔比大约从18比1开始，这相当令人印象深刻。没有运行发动机的飞机是一个效率稍低的滑翔机，但它仍然是一个滑翔机。以10:1的滑翔比，您有很大的机会找到农民的田地或机场来降落飞机。当然，只要可能，最好将飞机降落在机场而不是田地上，有几个原因。其中最令人信服的是，您不会在农民的田地周围找到飞机机械师，除非他们兼职稻草人。</p>
+
+            <p>一旦建立最大航程滑翔姿态并配平飞机，您现在有一个重要的选择要做。如果发动机故障发生在接近地面时，就没有太多时间来排除故障。在这种情况下，您的首要任务是找到一个地方降落，因为您即将这样做。另一方面，如果巡航飞行中发动机失效，您有更多时间，可以在专注于着陆之前运行发动机故障检查单。您如何处理起飞和巡航飞行之间的发动机故障基于您对可用高度和飞行环境的评估。</p>
+
+            <p>由于本课程的发动机故障发生在巡航飞行中，您应该有足够的时间快速运行<em>发动机故障检查单</em>。以下是您应该检查的内容以及检查的顺序。</p>
+
+            <p class="SubHead2">基本/简化发动机故障检查单</p>
+
+            <p>（数字对应以下解释）</p>
+
+            <ol>
+              <li>空速：俯仰至115节</li>
+
+              <li>燃油选择器：每个设置为<strong>开启</strong></li>
+
+              <li>燃油泵： <strong>开启</strong></li>
+
+              <li>混合比： <strong>富油</strong></li>
+
+              <li>备用空气或化油器加热线： <strong>开启</strong>（如果可用）</li>
+
+              <li>磁电机开关： <strong>双开</strong></li>
+
+              <li>襟翼： <strong>收起</strong></li>
+
+              <li>起落架： <strong>收起</strong></li>
+
+              <li>安全带：系好</li>
+            </ol>
+
+            <p>以下是上述每项的简要说明：</p>
+
+            <ol>
+              <li>我们已经讨论了为什么我们以115节的最大航程滑翔速度飞行（图3-3）。
+
+                <table border="0" cellspacing="5" cellpadding="5" summary="SummaryTBD">
+                  <tr>
+                    <td class="LessonFigureTable"><img src=
+                    "images/lesson3figure03.gif" alt="" border=
+                    "0"><br>
+                    <span class="Figure1">图3-3</span></td>
+                  </tr>
+                </table>
+              </li>
+
+              <li>我们检查以确保两个燃油选择器都设置在<strong>开启</strong>位置（图3-4）。
+
+                <table border="0" cellspacing="5" cellpadding="5" summary="SummaryTBD">
+                  <tr>
+                    <td class="LessonFigureTable"><img src=
+                    "images/lesson3figure04.gif" alt="" border=
+                    "0"><br>
+                    <span class="Figure1">图3-4</span></td>
+                  </tr>
+                </table>您可能不相信，但有时飞行员在切换燃油箱时会意外将操纵杆设置在<strong>关闭</strong>位置。也有可能意外用手或脚碰到操纵杆，将它们撞到<strong>关闭</strong>位置或空燃油箱的位置（就像飞行员在开关移动到<strong>关闭</strong>位置时的头部一样）。
+              </li>
+
+              <li>Baron有电动燃油泵，应该将其打开以帮助建立任何中断的燃油流动（图3-5）。
+
+                <table border="0" cellspacing="5" cellpadding="5" summary="SummaryTBD">
+                  <tr>
+                    <td class="LessonFigureTable"><img src=
+                    "images/lesson3figure05.gif" alt="" border=
+                    "0"><br>
+                    <span class="Figure1">图3-5</span></td>
+                  </tr>
+                </table>
+              </li>
+
+              <li>检查混合比以确保它们处于完全向前的位置，这意味着这些操纵杆不会限制流向发动机的燃油流动（图3-6）。
+
+                <table border="0" cellspacing="5" cellpadding="5" summary="SummaryTBD">
+                  <tr>
+                    <td class="LessonFigureTable"><img src=
+                    "images/lesson3figure06.gif" alt="" border=
+                    "0"><br>
+                    <span class="Figure1">图3-6</span></td>
+                  </tr>
+                </table>
+              </li>
+
+              <li>这个Baron没有备用空气操纵杆，这在空气过滤器气流受阻时作为辅助空气源。如果有，我们希望将它们设置在<strong>开启</strong>位置。这对您在Flight Simulator中飞行的其他飞机来说是值得记住的。</li>
+
+              <li>检查磁电机开关设置在<strong>双开</strong>位置很重要，因为它们可能被意外撞到并撞到<strong>关闭</strong>位置（图3-7）。
+
+                <table border="0" cellspacing="5" cellpadding="5" summary="SummaryTBD">
+                  <tr>
+                    <td class="LessonFigureTable"><img src=
+                    "images/lesson3figure07.gif" alt="" border=
+                    "0"><br>
+                    <span class="Figure1">图3-7</span></td>
+                  </tr>
+                </table>
+              </li>
+
+              <li>记住襟翼会产生阻力，所以尽快收起它们。</li>
+
+              <li>起落架也会产生阻力。如果您有高度，收起起落架。但是，如果您在低高度，您可能需要着陆，所以保持它们放下。但您不会滑翔那么远。</li>
+
+              <li>9. 可能会很颠簸，所以保持系好安全带。</li>
+            </ol>
+
+            <p>（注意：由于这是一架多引擎飞机，我们通常会在发动机故障条件下将两个螺旋桨顺桨。顺桨意味着将螺旋桨操纵杆尽可能向后拉，以限制风车螺旋桨产生的阻力。我们不在本课程中讨论螺旋桨顺桨。但是，您可以假设我会为您的空中巢穴顺桨两个螺旋桨。然而，在现实生活中，您必须自己顺桨您的巢穴）。要了解顺桨螺旋桨，请参见学习中心的<strong>驾驶双引擎飞机</strong>。</p>
+
+            <p>发动机故障检查单的目的是让发动机重新运行。您不想进行迫降，除非被迫，对吧？如果您确实设法重新启动发动机，您现在面临的唯一问题是向乘客解释为什么驾驶舱突然变得安静（以及为什么您突然开始出汗，因为乘客不喜欢看到这两件事同时发生）。我们假设您无法重新启动发动机以完成本课程的目的。（记住，即使我用单数形式谈论发动机故障，我指的是Baron的两个发动机。）</p><a name=
+            "Being Nosey About the Nose"></a>
+
+            <p class="SubHead">关于机头的好奇心</p>
+
+            <p>正如我已经提到的，完成此检查单假设您处于足够合理的高度使这种事情变得实用。鉴于运行此检查单只需几秒钟，您在完成期间不应该失去太多高度。当然，您在这样做时应该保持115节。大问题是：您应该让机头指向当前方向，还是在完成检查单时指向其他地方？</p>
+
+            <p>专业思维认为，安全意识强的飞行员在任何时候和任何地方飞行时都应该心中有一个安全的着陆点。换句话说，优秀的飞行员在离地的那一刻就一直在寻找安全的着陆点，以防发动机故障。当然，机场总是首选的着陆点，因为它有跑道、机械师和自动售货机。如果没有附近的机场，开阔的田地是下一个最佳选择（但如果中间有自动售货机，请避开）。发动机故障后，飞行员会本能地和反射性地转向机场或田地并运行发动机故障检查单。一旦检查单完成，飞行员的全部注意力现在可以投入到降落飞机上。如果在低空发动机失效，那么飞行员必须立即将全部注意力投入到配置飞机进行安全紧急着陆上，然后再完成发动机故障检查单（当然，如果甚至有时间完成的话）。起飞后发动机失效是这种情况的一个很好的例子。当飞机离地面只有几百英尺时，通常没有时间玩检查单。</p>
+
+            <p>在本课程中，您将在8,000英尺平均海平面（MSL）经历发动机故障，这使您比地面高度（AGL）大约高7,400英尺。在这种情况下，您有充足的时间完成发动机故障检查单。完成后，您应该使用您的GPS（图3-8）找到最近的可用机场。</p>
+
+            <table border="0" cellspacing="5" cellpadding="5" summary="SummaryTBD">
+              <tr>
+                <td class="LessonFigureTable"><img src=
+                "images/lesson3figure08.gif" alt="" border="0"><br>
+                <span class="Figure1">图3-8</span></td>
+              </tr>
+            </table>
+
+            <p>正如您通过阅读学习中心的GPS材料所学到的，您所要做的就是将小移动地图窗口中的小飞机指向小机场，开始向它移动。这将防止您在场外着陆，可能将飞机卷成一个小球。</p>
+
+            <p>由于我在商业课程2中提到的"心灵感应"，我预测佩恩机场将是离您最近的机场。拥有心灵感应真是太棒了。编写这些课程也很棒，这有助于确保我在几乎100%的时间内都有心灵感应。所以将您的机头指向佩恩机场并准备体验痛苦。让我们也为这次紧急着陆的下一步做好准备。</p><a name=
+            "Reduce the Pain of Emergency Landings"></a>
+
+            <p class="SubHead">减少紧急着陆的痛苦</p>
+
+            <p>佩恩机场有三条跑道供您着陆（图3-9）。</p>
+
+            <table border="0" cellspacing="5" cellpadding="5" summary="SummaryTBD">
+              <tr>
+                <td class="LessonFigureTable"><img src=
+                "images/lesson3figure09.gif" alt="" border="0"><br>
+                <span class="Figure1">图3-9</span></td>
+              </tr>
+            </table>
+
+            <p>它还有一个空中交通管制塔。一旦您指向机场方向，您应该考虑发出"Mayday"呼叫。这是您在适当频率上传输"Mayday, Mayday, Mayday"的时候。然而，如果您在六月有发动机故障，您不会传输"Juneday, Juneday, Juneday"。没有人会理解您的意思，也没有人会在意您的意思。"Mayday"是"我有紧急情况需要帮助"的国际术语。显然，最好在佩恩塔台频率上发送，因为您在那里有紧急情况。如果您不知道塔台频率，那么您应该在<em>国际航空紧急频率</em>121.5 MHz上发送。您当然会在这里引起某人的注意。目的是通知某人您的问题并获得任何可能的帮助。</p>
+
+            <p>如果您确实在佩恩塔台频率上发送，管制员很可能会询问您紧急情况的性质。您应该告诉他两个发动机都无法运行，您打算在佩恩进行紧急着陆。管制员很可能会清理整个机场的交通，让它成为"鲍勃的机场日"（如果鲍勃是您的名字），这意味着您拥有这个地方完全属于自己。管制员然后可能会询问您需要什么类型的帮助。有时他们会提供滚动救援卡车，以防您需要那种帮助。然而，我不会要求他们是否可以改为滚动餐饮卡车。您希望管制员认为您渴望安全，而不是三明治。</p>
+
+            <p>在任何紧急情况下，逆风着陆都是一个重要目标。这为您提供最慢的触地速度和最短的着陆距离。这就是为什么在与佩恩塔台通信时，管制员很可能会通知您最接近逆风对齐的跑道。选择那个。对于本课程，今天佩恩没有风。（我不仅有心灵感应，我还控制风。我爱这份工作。）这意味着您可以选择任何跑道和任何您选择的方向着陆。考虑到这些选择，我当然喜欢在长跑道上着陆，即34L/16R。您也应该喜欢这样。只是不要尝试飞行花哨。</p><a name="The Emergency Landing"></a>
+
+            <p class="SubHead">紧急着陆</p>
+
+            <p>现在您已选择在佩恩机场进行紧急着陆，让我们讨论一下这样做的技术。也许紧急着陆过程中最重要的单项是保持在机场的滑翔距离内。显然，您必须从机场上方盘旋下降，最终将自己送到选定跑道的第四边。最好避免在有发动机故障时进行直线进近，当您可以飞行修改的矩形交通模式时（图3-10）</p>。
+
+            <table border="0" cellspacing="5" cellpadding="5" summary="SummaryTBD">
+              <tr>
+                <td class="LessonFigureTable"><img src=
+                "images/lesson03_10.gif" alt="" border="0" width=
+                "450" height="221"><br>
+                <span class="Figure1">图3-10</span></td>
+              </tr>
+            </table>
+
+            <p>为什么？飞行矩形模式为您提供更多选项来纠正您对飞机滑翔距离判断的任何错误。当飞行长最终进近与飞行平行于跑道然后转向第三边和最终进近相比，估计您滑翔效果如何要困难得多。您可以改变矩形模式的几何形状以到达跑道，如图3-11所示。在长最终进近期间改变您的滑翔范围要困难得多。</p>
+
+            <table border="0" cellspacing="5" cellpadding="5" summary="SummaryTBD">
+              <tr>
+                <td class="LessonFigureTable"><img src=
+                "images/lesson03_11.gif" alt="" border="0" width=
+                "250" height="603"><br>
+                <span class="Figure1">图3-11</span></td>
+              </tr>
+            </table>
+
+            <p>由于您正直接滑翔到机场中心，当您在跑道综合体中心上空时，开始使用20到30度的坡度进行左转。在机场上方向左盘旋让您在下降过程中更容易看到它，因为飞行员经常坐在飞机的左侧。这被称为下降螺旋。您的目标是在下降过程中稍微调整坡度，以保持在跑道综合体的地理中心上空。这让您处于最佳位置，以便在接近场地高度时选择最理想的着陆跑道。</p>
+
+            <p>从这一点开始，您不断地观察、计划、策划和谋划。</p>
+
+            <p>当您大约在机场高度2,000英尺以内时，您应该决定使用哪条最佳跑道进行紧急着陆。由于佩恩比海平面高606英尺，您希望在大约2,600英尺MSL时做出这个决定。此时，问问自己需要如何机动才能在合适着陆跑道的第四边上滚出。如果风况有利于某条跑道，您当然希望机动以在平行于该跑道的第四边上滚出。您的目标应该是从跑道中心线偏移大约四分之一到半英里的距离飞行（图3-12）。这应该让您保持在所需跑道的滑翔距离内。</p>
+
+            <table border="0" cellspacing="5" cellpadding="5" summary="SummaryTBD">
+              <tr>
+                <td class="LessonFigureTable"><img src=
+                "images/lesson03_12.gif" alt="" border="0" width=
+                "450" height="283"><br>
+                <span class="Figure1">图3-12</span></td>
+              </tr>
+            </table>
+
+            <p>如果您的计划正确，您应该在距离地面1,500到2,000英尺的高度中段飞行第四边。您的目标是在距离地面1,000英尺时位于跑道门槛的正横位置（图3-13）。</p>
+
+            <table border="0" cellspacing="5" cellpadding="5" summary="SummaryTBD">
+              <tr>
+                <td class="LessonFigureTable"><img src=
+                "images/lesson3figure13.gif" alt="" border="0"><br>
+                <span class="Figure1">图3-13</span></td>
+              </tr>
+            </table>
+
+            <p>正如您在以前的课程中学到的，如果从这个位置您太低或太高，您可以修改模式的形状来帮助您滑翔到跑道。在本课程的这一部分，请确保使用键盘或操纵杆上的帽开关来关注跑道的位置。计划在跑道在机翼左侧45度时转向第三边，如果不是更早一点的话。作为一般规则（即使您不是将军），在不使用发动机着陆时，高一点总比太低好。您总是可以失去高度，但当发动机在度假时，很难获得高度。从第四边的正横位置到最终进近，您如何飞行第三边和最终进近决定您是否能够滑翔到跑道。您估计滑翔距离和修改飞行路径的能力是一个练习和经验的问题。</p>
+
+            <p>然而，在第三边时，您处于完成<em>紧急着陆</em>检查单的最佳位置，如下所示：</p>
+
+            <p class="SubHead2">基本/紧急着陆检查单</p>
+
+            <ol>
+              <li>空速：115节直到准备拉平和着陆flare</li>
+
+              <li>混合比：怠速切断</li>
+
+              <li>燃油切断阀： <strong>关闭</strong></li>
+
+              <li>点火开关： <strong>关闭</strong></li>
+
+              <li>襟翼：根据需要</li>
+
+              <li>起落架： <strong>放下</strong></li>
+
+              <li>主开关： <strong>关闭</strong></li>
+
+              <li>舱门：在触地前解锁</li>
+            </ol>
+
+            <p><strong>以下是上述每项的简要说明：</strong></p>
+
+            <ol>
+              <li>您希望保持115节，直到您处于不需要飞机最佳滑翔能力的位置。很可能这将是在您开始着陆flare的拉平时。</li>
+
+              <li>着陆前，混合比应设置在怠速切断位置，以防止燃油泄漏或在您不期望也不想要时突然发动机重启。</li>
+
+              <li>燃油切断阀应设置为<strong>关闭</strong>以防止触地或撞击后的燃油泄漏。</li>
+
+              <li>点火开关设置为<strong>关闭</strong>以类似地防止意外的发动机重启，以及其他原因。</li>
+
+              <li>襟翼根据需要。记住，如果您在田地里着陆，您希望以全襟翼（如果可能）触地以降低您的触地速度。</li>
+
+              <li>除非您在水面或类似表面上着陆，否则着陆前应该放下起落架，在这种情况下，您可能希望进行无起落架着陆。不，我们这样做不是为了防止撞到比目鱼的头。我们这样做是为了防止飞机在着陆时向前俯冲进入水中，可能导致翻转，就像海豚一样（您不想这样做，因为没有免费的鲭鱼零食）。</li>
+
+              <li>主开关是倒数第二个关闭的项目。这最大限度地减少了可能导致坠机后火灾的点火源。它是最后的，因为在像Baron这样的飞机上，降低襟翼和起落架需要电力。</li>
+
+              <li>最后，您希望打开飞机门。这防止门在触地粗糙时被卡住，这意味着如果您希望，您将更容易退出飞机。</li>
+            </ol>
+
+            <p>由于本课程的目的是训练您在飞行中的滑翔程序，我将在飞行中为您运行发动机故障检查单。我希望您专注于保持适当的滑翔速度并保持在跑道的滑翔距离内。</p>
+
+            <p>好了，这就是处理飞行中发动机故障的基本课程。我希望您重复此课程多次，以发展您的熟练程度。诚然，在Baron中处理双发动机故障比在塞斯纳Skyhawk SP Model 172中要更具挑战性。Baron飞得稍快一点，下降得也快一点。然而，如果您能成功地在佩恩机场降落这架飞机，您可能也能在相同条件下降落大多数单引擎飞机。这里介绍的原则是通用的，但您会发现它们适用于大多数其他模拟器类型飞机。</p>
+
+            <p>点击<strong>立即飞行此课程</strong>链接来练习您刚学到的内容。</p>
+          </div>
+
+          <div class="TopLink">
+            <a href="BriefingCommercialLessons03.htm" class=
+            "FlyNowLink">立即飞行此课程</a>
+          </div>
+
+          <div class="TopLink">
+            <a href="#top" class="TopLink">- 顶部 -</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+</body>
+</html>

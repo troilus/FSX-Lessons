@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd" >
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Windows (vers 12 April 2005), see www.w3.org">
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8">
+
+  <title>飞行课程</title>
+  <link href="../common/style.css" rel="stylesheet" type=
+  "text/css">
+<script language="JavaScript" type="text/javascript">
+<!--
+// 打印页面功能
+var da = (document.all) ? 1 : 0;
+var pr = (window.print) ? 1 : 0;
+var mac = (navigator.userAgent.indexOf("Mac") != -1);
+
+
+function printPage(frame, arg) {
+  if (frame == window) {
+    printThis();
+  } else {
+    link = arg; // 全局变量
+    printFrame(frame);
+  }
+  return false;
+}
+
+function printThis() {
+  if (pr) { // NS4, IE5
+    window.print();
+  } else if (da && !mac) { // IE4 (Windows)
+    vbPrintPage();
+  } else { // 其他浏览器
+    alert("抱歉，您的浏览器不支持此功能。");
+  }
+}
+
+function printFrame(frame) {
+  if (pr && da) { // IE5
+    frame.focus();
+    window.print();
+    link.focus();
+  } else if (pr) { // NS4
+    frame.print();
+  } else if (da && !mac) { // IE4 (Windows)
+    frame.focus();
+    setTimeout("vbPrintPage(); link.focus();", 100);
+  } else { // 其他浏览器
+    alert("抱歉，您的浏览器不支持此功能。");
+  }
+}
+if (da && !pr && !mac) with (document) {
+  writeln('<OBJECT ID="WB" WIDTH="0" HEIGHT="0" CLASSID="clsid:8856F961-340A-11D0-A96B-00C04FD705A2"><\/OBJECT>');
+  writeln('<' + 'SCRIPT LANGUAGE="VBScript">');
+  writeln('Sub window_onunload');
+  writeln('  On Error Resume Next');
+  writeln('  Set WB = nothing');
+  writeln('End Sub');
+  writeln('Sub vbPrintPage');
+  writeln('  OLECMDID_PRINT = 6');
+  writeln('  OLECMDEXECOPT_DONTPROMPTUSER = 2');
+  writeln('  OLECMDEXECOPT_PROMPTUSER = 1');
+  writeln('  On Error Resume Next');
+  writeln('  WB.ExecWB OLECMDID_PRINT, OLECMDEXECOPT_DONTPROMPTUSER');
+  writeln('End Sub');
+  writeln('<' + '/SCRIPT>');
+}
+
+// -->
+</script>
+</head>
+
+<body class="stdcolor" >
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="SummaryTBD">
+
+    <tr>
+      <td width="50%" nowrap><img src="images/1ptrans.gif" width=
+      "10" height="1" alt="" border="0"><a href=
+      "../../uires/fl01.htm" class="nav" target=
+      "_top">主页</a><img src="../Common/images/1ptrans.gif" width=
+      "20" height="1" alt="" border="0"><img src=
+      "../Common/images/back.gif" width="11" height="11" alt=""
+      border="0"> <a href="javascript:history.back()" class=
+      "nav">返回</a></td>
+
+      <td width="50%" align="right" nowrap><a href="#" class="nav"
+      onclick="return printPage(parent.mainFrame, this)">打印</a>
+      <img src="../Common/images/1ptrans.gif" width="90" height="1"
+      alt="" border="0"></td>
+    </tr>
+  </table>
+</body>
+</html>
